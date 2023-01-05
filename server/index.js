@@ -13,10 +13,7 @@ const db = mysql.createConnection({
 
 App.use(express.json());
 App.use(cors());
-// unsplash = new unsplash({
-//   applicationId: "1xg6Py7pkOWr_8lSRFRpTvAacLRqsKewoPezmPNN7wo",
-//   secret: "Xj-Ml3YjQq8Kty3tsxoduZih7cCWUxHckg42U_byK5U",
-// });
+
 App.get("/", (req, res) => {
   res.json("this is the backend ");
 });
